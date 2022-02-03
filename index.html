@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Nike</title>
+</head>
+
+<body class="page">
+
+  <header class="header">
+      <button class="header__menu-button" type="button"></button>
+    <h1 class="header__title">NIKE X MMW TRAINING 4.0</h1>
+  </header>
+
+  <main class="main">
+
+    <section class="about">
+      <h2 class="about__title"><a name="collection"></a>О КОЛЛЕКЦИИ</h2>
+      <div class="about__info">
+        <p class="about__info-paragraph">Разум или тело, движение или покой, спорт или отдых — дисциплина
+          всегда остаётся движущей силой прогресса. Открой для себя мир невероятной концентрации и преданности
+          делу. Дизайнер Мэттью Уильямс, визажистка Исамайя Ффренч и музыкант Ив Тюмор показывают, каких
+          результатов можно достичь благодаря упорству.</p>
+        <img src="./images/dancer_in_the_dark.png" alt="Танцующий в темноте человек"
+             class="about__info-image">
+      </div>
+      <img src="./images/collection_1.png" alt="Коллаж фотографий" class="about__image">
+      <div class="about__training">
+        <h3 class="about__training-title">ТРЕНИНГ — ЭТО НЕ ПРОСТО ФИЗИЧЕСКАЯ АКТИВНОСТЬ
+        </h3>
+        <p class="about__training-paragraph">Это практика для тела и разума, за которой стоят концентрация
+          и дисциплина. Мэттью Уильямс выражает эту идею через чередование движения и осознанности. Исамайя
+          Ффренч исследует свою способность совершать тяжёлые повторяющиеся действия с помощью йоги. Ив Тюмор
+          превращает силовые тренировки в эксперимент по испытанию силы духа.</p>
+      </div>
+    </section>
+
+    <section class="goods">
+      <h2 class="goods__title"><a name="goods"></a>ТОВАРЫ</h2>
+      <button class="goods__swipe-left"></button>
+      <div class="goods__card">
+        <ul class="goods__card-container">
+          <li class="goods__card-item">
+            <img src="./images/slider_1.png" alt="Фото" class="goods__card-image">
+            <button class="goods__buy-button"></button>
+          </li>
+
+          <li class="goods__card-item">
+            <img src="./images/slider_2.png" alt="КФото" class="goods__card-image">
+            <button class="goods__buy-button"></button>
+          </li>
+
+          <li class="goods__card-item">
+            <img src="./images/slider_3.png" alt="Фото" class="goods__card-image">
+            <button class="goods__buy-button"></button>
+          </li>
+
+          <li class="goods__card-item">
+            <img src="./images/slider_4.png" alt="Фото" class="goods__card-image">
+            <button class="goods__buy-button"></button>
+          </li>
+
+          <li class="goods__card-item">
+            <img src="./images/slider_1.png" alt="Фото" class="goods__card-image">
+            <button class="goods__buy-button"></button>
+          </li>
+
+          <li class="goods__card-item">
+            <img src="./images/slider_3.png" alt="Фото" class="goods__card-image">
+            <button class="goods__buy-button"></button>
+          </li>
+
+          <li class="goods__card-item">
+            <img src="./images/slider_4.png" alt="Фото" class="goods__card-image">
+            <button class="goods__buy-button"></button>
+          </li>
+
+<!--          <li class="goods__card-item">-->
+<!--            <img src="./images/slider_1.png" alt="Фото" class="goods__card-image">-->
+<!--            <button class="goods__buy-button"></button>-->
+<!--          </li>-->
+        </ul>
+      </div>
+      <button class="goods__swipe-right"></button>
+      <div class="goods__text">
+        <p class="goods__paragraph">Дисциплина — упражнение, которое ты практикуешь ежедневно. Ты
+          учишь свои разум и тело переносить суровые условия и достигать невозможного. Раскрой свою внутреннюю
+          силу с новой коллекцией MMW, в которой идея дисциплины передается через высочайшее качество
+          исполнения и
+          исключительную выразительность.</p>
+      </div>
+      <img src="./images/collection_2.png" alt="Коллаж фото" class="goods__image">
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <h2 class="footer__title"><a name="sign"></a>Подписаться</h2>
+    <p class="footer__subtitle">Укажите свой email чтобы быть в курсе даты релиза, и других новостей о коллекции</p>
+    <form class="footer__form">
+      <input type="email" class="footer__email" placeholder="Введите email">
+      <button type="submit" class="footer__button">Подписаться</button>
+    </form>
+    <p class="footer__sign">&copy; Nike, Inc., 2021. Какие-то права защищены.</p>
+  </footer>
+
+  <div class="popup popup_ope">
+    <button class="popup__close-button"></button>
+    <nav class="popup__navigation">
+      <ul class="popup__list">
+      <li class="popup__list-item">
+        <a href="#collection" class="popup__link">О коллекции</a>
+      </li>
+      <li class="popup__list-item">
+        <a href="#goods" class="popup__link">Товары</a>
+      </li>
+      <li class="popup__list-item">
+        <a href="#sign" class="popup__link">Подписаться</a>
+      </li>
+      </ul>
+    </nav>
+  </div>
+
+  <script src="scripts/index.js"></script>
+</body>
+</html>
