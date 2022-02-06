@@ -1,4 +1,4 @@
-//cargo-slider
+//goods-slider
 const goods = document.querySelector('.goods');
 let i = 0;
 for (let li of goods.querySelectorAll('.goods__card-item')) {
@@ -7,7 +7,7 @@ for (let li of goods.querySelectorAll('.goods__card-item')) {
     i++;
 }
 
-let width = 183; // ширина картинки
+let width = 160; // ширина картинки
 let count = 1.5; // счетчик изображений
 let list = goods.querySelector('.goods__card-container');
 let listElems = goods.querySelectorAll('.goods__card-item');
