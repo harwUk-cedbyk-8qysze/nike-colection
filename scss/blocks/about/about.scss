@@ -25,9 +25,9 @@
     padding: $mid $min $max;
 
     @media screen and (max-width: 650px) {
-        flex-direction: column;
-        align-items: center;
-        padding: $min $min $mid;
+      flex-direction: column;
+      align-items: center;
+      padding: $min $min $mid;
 
     }
   }
