@@ -4,6 +4,9 @@
   margin: 0 auto;
   padding: 0;
   font-family: "Golos", Arial, sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: white;
   text-rendering: optimizeLegibility;
   min-width: 305px;
@@ -224,12 +227,24 @@
   margin: 0 0 24px;
   padding: 0;
 }
+@media screen and (max-width: 650px) {
+  .goods__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 5px;
+  }
+}
 .goods__card {
   display: block;
   width: 100%;
   overflow-x: scroll;
   padding-bottom: 24px;
   position: relative;
+}
+@media screen and (max-width: 650px) {
+  .goods__card {
+    padding-bottom: 5px;
+  }
 }
 .goods__card-container {
   max-width: 1440px;
@@ -259,6 +274,14 @@
 .goods__buy-button:hover {
   opacity: 0.8;
 }
+@media screen and (max-width: 650px) {
+  .goods__buy-button {
+    max-width: 286px;
+    padding-right: 280px;
+    background-image: url(../images/buy-button-big.svg);
+    background-repeat: no-repeat;
+  }
+}
 .goods__swipe-right {
   height: 40px;
   width: 40px;
@@ -278,6 +301,11 @@
 .goods__swipe-right:hover {
   opacity: 0.8;
 }
+@media screen and (max-width: 650px) {
+  .goods__swipe-right {
+    top: 242px;
+  }
+}
 .goods__swipe-left {
   height: 40px;
   width: 40px;
@@ -296,6 +324,11 @@
 }
 .goods__swipe-left:hover {
   opacity: 0.8;
+}
+@media screen and (max-width: 650px) {
+  .goods__swipe-left {
+    top: 242px;
+  }
 }
 .goods__card::-webkit-scrollbar {
   height: 4px;
@@ -328,6 +361,19 @@
   margin: 0;
   padding: 0 20px 0 0;
 }
+@media screen and (max-width: 780px) {
+  .goods__paragraph {
+    max-width: 383px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .goods__paragraph {
+    padding: 0;
+    max-width: 280px;
+    text-align: start;
+    margin: 0 auto;
+  }
+}
 .goods__text {
   width: 100%;
   display: flex;
@@ -335,43 +381,7 @@
   margin: 0;
   padding: 80px 0 80px;
 }
-.goods__image {
-  width: 100%;
-  object-fit: cover;
-}
-
-@media screen and (max-width: 1200px) {
-  .goods__paragraph {
-    max-width: 359px;
-  }
-}
-@media screen and (max-width: 750px) {
-  .goods__card {
-    padding: 0 0 8px;
-  }
-  .goods__title {
-    padding: 0 0 8px;
-    font-size: 32px;
-    line-height: 40px;
-  }
-  .goods__swipe-left {
-    top: 265px;
-  }
-  .goods__swipe-right {
-    top: 265px;
-  }
-  .goods__buy-button {
-    max-width: 286px;
-    padding-right: 280px;
-    background-image: url(../images/buy-button-big.svg);
-    background-repeat: no-repeat;
-  }
-  .goods__paragraph {
-    padding: 0;
-    max-width: 280px;
-    text-align: start;
-    margin: 0 auto;
-  }
+@media screen and (max-width: 650px) {
   .goods__text {
     display: inline-block;
     box-sizing: border-box;
@@ -379,6 +389,11 @@
     margin: 0 auto;
   }
 }
+.goods__image {
+  width: 100%;
+  object-fit: cover;
+}
+
 .footer {
   margin: 0 auto;
   padding: 0;
@@ -396,8 +411,6 @@
 .footer__title {
   margin: 80px 0 0;
   padding: 0;
-  font-family: Golos;
-  font-style: normal;
   font-weight: 500;
   font-size: 64px;
   line-height: 125%;
@@ -415,8 +428,6 @@
 .footer__subtitle {
   margin: 40px 0;
   padding: 0;
-  font-family: Golos;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
@@ -456,8 +467,6 @@
   width: 171px;
   height: 40px;
   cursor: pointer;
-  font-family: Golos;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -471,8 +480,6 @@
 }
 .footer__sign {
   margin: 40px 0 0;
-  font-family: Golos;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
