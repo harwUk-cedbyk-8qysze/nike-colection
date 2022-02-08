@@ -1,0 +1,59 @@
+@mixin title-settings {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 80px;
+}
+
+@mixin title-settings-mini {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+@mixin subtitle-setting {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+@mixin paragraph-settings {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin color-white {
+    color: #FFFFFF;
+}
+
+
+@mixin sm {
+    @media (max-width: map-get($breakpoints, sm)) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: map-get($breakpoints, md)) {
+        @content;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

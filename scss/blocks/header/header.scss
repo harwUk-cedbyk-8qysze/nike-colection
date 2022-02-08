@@ -1,0 +1,61 @@
+.header {
+  margin: 0 auto;
+  padding: 0 0px;
+  box-sizing: border-box;
+  background-image: url('../images/header.png');
+  width: 100%;
+  min-height: 810px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+
+  @include sm {
+    min-height: 360px;
+  }
+
+  &__menu-button {
+    margin: 40px 20px 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../images/menu.svg");
+    background-size: cover;
+    background-position: center;
+    max-width: 48px;
+    height: 48px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s linear;
+    box-sizing: border-box;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    @include sm {
+      background-image: url("../images/mini_menu.svg");
+      max-width: 24px;
+      height: 24px;
+      margin-top: 20px;
+    }
+  }
+
+  &__title {
+    @include title-settings;
+    margin: 120px 20px;
+    padding: 0;
+    display: block;
+    max-width: 460px;
+    color: #0A0A0A;
+
+    @include md {
+      margin-top: 80px;
+    }
+
+    @include sm {
+      max-width: 280px;
+      margin-top: 40px;
+      @include title-settings-mini;
+    }
+  }
+}
