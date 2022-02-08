@@ -7,22 +7,19 @@
   background-color: #0a0a0a;
   min-height: 448px;
 
-  @media screen and (max-width: 650px) {
+  @include sm {
     min-height: 390px;
   }
 
   &__title {
+    @include title-settings;
     margin: 80px 0 0;
     padding: 0;
-
-    font-weight: 500;
-    font-size: 64px;
-    line-height: 125%;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    @include color-white;
 
-    @media screen and (max-width: 650px) {
+    @include sm {
       margin-top: 40px;
       font-size: 32px;
       line-height: 125%;
@@ -30,16 +27,13 @@
   }
 
   &__subtitle {
+    @include subtitle-setting;
     margin: 40px 0;
     padding: 0;
-
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 150%;
     text-align: center;
-    color: #FFFFFF;
+    @include color-white;
 
-    @media screen and (max-width: 650px) {
+    @include sm {
       width: 280px;
       margin-top: 20px;
       margin-bottom: 20px;
@@ -51,7 +45,7 @@
     width: 464px;
     justify-content: space-between;
 
-    @media screen and (max-width: 650px) {
+    @include sm {
       width: 280px;
       min-height: 90px;
       flex-direction: column;
@@ -64,11 +58,16 @@
     width: 280px;
     height: 38px;
     border: none;
+    transition: opacity 0.2s linear;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   &__button {
     background-color: #0a0a0a;
-    border: 1px #FFFFFF solid;
+    border: 1px #ffffff solid;
     border-radius: 100px;
     width: 171px;
     height: 40px;
@@ -78,23 +77,25 @@
     font-size: 16px;
     line-height: 150%;
     text-transform: uppercase;
-    color: #FFFFFF;
+    @include color-white;
+    transition: opacity 0.2s linear;
 
-    @media screen and (max-width: 650px) {
+    @include sm {
       width: 280px;
+    }
+
+    &:hover {
+      opacity: 0.8;
     }
   }
 
   &__sign {
+    @include subtitle-setting;
     margin: 40px 0 0;
-
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 150%;
     text-align: center;
-    color: #FFFFFF;
+    @include color-white;
 
-    @media screen and (max-width: 650px) {
+    @include sm {
       margin-top: 20px;
     }
   }
