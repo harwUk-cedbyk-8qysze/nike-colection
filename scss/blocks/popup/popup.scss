@@ -1,19 +1,19 @@
 .popup {
+  margin: 0 auto;
   visibility: hidden;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 810px;
+  min-height: 100vh;
   opacity: 0;
   background-color: #0a0a0a;
   display: flex;
   flex-direction: column;
 
-  @media screen and (max-width: 650px) {
+  @include sm {
     min-height: 360px;
   }
-
 
   &__close-button {
     margin: 40px 0 0 40px;
@@ -33,18 +33,13 @@
       opacity: 0.6;
     }
 
-    @media screen and (max-width: 650px) {
+    @include sm {
       margin: 20px 0 0 20px;
       background-image: url("../images/mini_close.svg");
       width: 24px;
       min-height: 24px;
     }
   }
-
-  //&__image-button {
-  //  margin: 0;
-  //  padding: 0;
-  //}
 
   &__navigation {
     display: block;
@@ -61,7 +56,7 @@
     flex-direction: column;
     align-items: center;
 
-    @media screen and (max-width: 650px) {
+    @include sm {
       margin: 35px 0;
     }
   }
@@ -83,14 +78,12 @@
     box-sizing: border-box;
     align-self: center;
 
-    font-family: Golos;
-    font-style: normal;
     font-weight: 500;
     font-size: 32px;
     line-height: 125%;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    @include color-white;
 
     transition: opacity 0.2s linear;
 
@@ -98,12 +91,12 @@
       opacity: 0.6;
     }
 
-    @media screen and (max-width: 780px) {
+    @mixin md {
       font-size: 24px;
       line-height: 133%;
     }
 
-    @media screen and (max-width: 650px) {
+    @include sm {
       margin: 20px 0;
       font-size: 20px;
       line-height: 140%;
@@ -113,8 +106,6 @@
 
 .popup_open {
   visibility: visible;
-  //height: 100%;
   opacity: 1;
+  z-index: 2;
 }
-
-

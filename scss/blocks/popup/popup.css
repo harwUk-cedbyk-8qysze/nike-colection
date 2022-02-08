@@ -1,109 +1,18 @@
-.popup {
-  visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 810px;
-  opacity: 0;
-  background-color: #0a0a0a;
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (max-width: 650px) {
-  .popup {
-    min-height: 360px;
-  }
-}
-.popup__close-button {
-  margin: 40px 0 0 40px;
-  padding: 0;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: url("../images/close.svg");
-  background-size: cover;
-  background-position: center;
-  border: none;
-  width: 48px;
-  min-height: 48px;
-  cursor: pointer;
-  transition: opacity 0.2s linear;
-  align-self: flex-start;
-}
-.popup__close-button:hover {
-  opacity: 0.6;
-}
-@media screen and (max-width: 650px) {
-  .popup__close-button {
-    margin: 20px 0 0 20px;
-    background-image: url("../images/mini_close.svg");
-    width: 24px;
-    min-height: 24px;
-  }
-}
-.popup__navigation {
+/* Error: Undefined mixin.
+ *    ,
+ * 14 | /   @include sm {
+ * 15 | |     min-height: 360px;
+ * 16 | \   }
+ *    '
+ *   popup.scss 14:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  margin: 0;
-  padding: 0;
-  align-self: center;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 14 \2502  \250c    @include sm {\a 15 \2502  \2502      min-height: 360px;\a 16 \2502  \2514    }\a    \2575 \a   popup.scss 14:3  root stylesheet";
 }
-.popup__list {
-  margin: 149px 0 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media screen and (max-width: 650px) {
-  .popup__list {
-    margin: 35px 0;
-  }
-}
-.popup__list-item {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-}
-.popup__link {
-  margin: 40px 0;
-  padding: 0;
-  width: 100%;
-  text-decoration: none;
-  box-sizing: border-box;
-  align-self: center;
-  font-family: Golos;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 125%;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  transition: opacity 0.2s linear;
-}
-.popup__link:hover {
-  opacity: 0.6;
-}
-@media screen and (max-width: 780px) {
-  .popup__link {
-    font-size: 24px;
-    line-height: 133%;
-  }
-}
-@media screen and (max-width: 650px) {
-  .popup__link {
-    margin: 20px 0;
-    font-size: 20px;
-    line-height: 140%;
-  }
-}
-
-.popup_open {
-  visibility: visible;
-  opacity: 1;
-}
-
-/*# sourceMappingURL=popup.css.map */
